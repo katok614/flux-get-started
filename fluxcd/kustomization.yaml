@@ -1,0 +1,7 @@
+namespace: kaz-demo
+resources:
+  - namespace.yaml
+bases:
+  - github.com/fluxcd/flux//deploy
+patchesStrategicMerge:
+  - patch.yaml
